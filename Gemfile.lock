@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.3)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    geminabox (1.1.1)
+      builder
+      faraday
+      httpclient (>= 2.2.7)
+      nesty
+      reentrant_flock
+      sinatra (>= 1.2.7)
+    httpclient (2.8.3)
+    multipart-post (2.0.0)
+    mustermann (1.0.3)
+    nesty (1.0.2)
+    rack (2.0.7)
+    rack-protection (2.0.5)
+      rack
+    reentrant_flock (0.1.1)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  geminabox
+
+BUNDLED WITH
+   1.17.3
