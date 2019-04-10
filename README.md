@@ -10,7 +10,13 @@ See these resources for details:
 
 ```sh
 docker build -t geminabox .
-docker run --rm -p 9292:9292 geminabox:latest
+docker run --rm -p 9292:9292 -v "$PWD":/usr/src/app --name geminabox geminabox:latest
+```
+
+Or without docker:
+
+```sh
+rackup
 ```
 
 ## Push to the server
@@ -36,4 +42,10 @@ source "http://localhost:9292"
 ```sh
 gem sources --add http://localhost:9292
 gem install my-awesome-gem
+```
+
+## Clear the server
+
+```sh
+rm -rf gem/data/
 ```
